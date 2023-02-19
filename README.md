@@ -83,14 +83,25 @@ This student management api build to manage the students records and Reports  in
 ```
 
 ## API Root Endpoint
-- To borrow a book
+- To add a student
 ```
-PUT "http://localhost:8080/users/books/{userid}/{bookid}"
+PUT "http://localhost:8080/students"
 ```
--To return a book
+-To see Average Percentage of whole class in recent semester
 ```
-PUT "http://localhost:8080/users/books/return/{userid}/{bookid}"
+PUT "http://localhost:8080/get_avg_students_marks"
 ```
+
+-To see Average marks of Students in a subject
+```
+PUT "http://localhost:8080/get_avg_marks"
+```
+
+-To see top 2 Consistent Students across all semesters (Maximum average marks)
+```
+PUT "http://localhost:8080/top_two_students"
+```
+
 -You can also check through swagger ui
 ```
 http://localhost:8080/swagger-ui/
